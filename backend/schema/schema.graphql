@@ -1,0 +1,21 @@
+type Message {
+    id: String!
+    sender: User!
+    content: String!
+    createdAt: Number!
+}
+
+type ChatRoom {
+    id: String!
+    name: String!
+    users: [User!]!
+    messages: [Message!]!
+
+}
+
+type User {
+    id: String!
+    name: String!
+    username: String!
+    chatRooms: [ChatRoom!]!
+}

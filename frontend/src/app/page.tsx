@@ -1,10 +1,13 @@
 import Image from 'next/image'
-import Page from './_components/Page'
+import PageWrapper from './_components/Page'
+import FriendList from './_components/FriendList'
+import ChatBox from './_components/ChatBox'
 
 export default function Home() {
   return (
-    <Page>
-      <div></div>
-    </Page>
+    <PageWrapper>
+      <FriendList/>
+      <ChatBox />
+    </PageWrapper>
   )
 }
